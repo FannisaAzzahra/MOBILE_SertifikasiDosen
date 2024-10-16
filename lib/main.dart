@@ -1,10 +1,7 @@
-
-
-
-// PROGRESS 2
 import 'package:flutter/material.dart';
 import 'package:ujicoba/daftar_dosen.dart';
 import 'profile_dosen.dart';
+import 'profile_pimjur.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/daftardosen': (context)=>MyHomePage(),
         '/profile' : (context)=>DosenProfilePage(),
+        '/profile_pinjur' : (context)=>PinjurProfilePage(),
       },
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'profile_dosen.dart';
+import 'profile_pimjur.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -34,13 +35,13 @@ class MyHomePage extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.notifications),
             onPressed: () {
-              // Aksi untuk notifikasi
+              Navigator.pushReplacementNamed(context, '/profile_pinjur');  // ini navigasi Notivikasi
             },
           ),
           IconButton(
             icon: const Icon(Icons.person),
             onPressed: () {
-              Navigator.pushReplacementNamed(context, '/profile');
+              Navigator.pushReplacementNamed(context, '/profile');  // ini navigasi Profile
             },
           ),
         ],
